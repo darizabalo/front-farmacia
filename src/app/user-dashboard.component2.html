@@ -1,0 +1,21 @@
+<h3>Usuarios</h3>
+<!-- <div class="grid grid-pad">
+    <a *ngFor="let user of users" [routerLink]="['/userDetail', user.id]" class="col-1-4">
+        <div class="module hero">
+            <h4>{{user.name}}</h4>
+        </div>
+    </a>
+</div> -->
+<div class="row">
+
+    <div class="thumbnail col-sm-4 col-md-3" *ngFor="let user of users" [routerLink]="['/userDetail', user.id]">
+        <!-- <img src="..." alt="..."> -->
+        <div class="caption">
+            <h3>{{user.name}}</h3>
+            <p>
+                <!-- <a href="#" class="btn btn-primary" role="button">Button</a>
+                <a href="#" class="btn btn-default" role="button">Button</a> -->
+            </p>
+        </div>
+    </div>
+</div>
